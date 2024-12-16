@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Prediction</h1>
+        <div class="form">
+            <label for="ticker">Enter Stock Ticker Symbol:</label>
+            <input type="text" id="ticker" placeholder="e.g. AAPL">
+            <button onclick="getPrediction()">Get Prediction</button>
+        </div>
+        <div id="loading" class="loading">Loading...</div>
+        <div id="error" class="error"></div>
+        <div id="result" class="result">
+            <h2>Prediction Results</h2>
+            <p><strong>Actual Close Price: </strong><span id="actual-close"></span></p>
+            <div id="predicted-prices">
+                <h3>Predicted Prices:</h3>
+                <ul>
+                    <li><strong>Random Forest:</strong> <span id="rf-prediction"></span></li>
+                    <li><strong>Gradient Boosting:</strong> <span id="gb-prediction"></span></li>
+                    <li><strong>XGBoost:</strong> <span id="xgb-prediction"></span></li>
+                </ul>
+            </div>
+            <div id="model-performance">
+                <h3>Model Performance:</h3>
+                <ul>
+                    <li><strong>Random Forest Accuracy:</strong> <span id="rf-performance"></span></li>
+                    <li><strong>Gradient Boosting Accuracy:</strong> <span id="gb-performance"></span></li>
+                    <li><strong>XGBoost Accuracy:</strong> <span id="xgb-performance"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+#ticker {
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#loading {
+    display: none;
+    font-size: 18px;
+    color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+}
+
+.result {
+    display: none;
+    margin-top: 30px;
+    text-align: left; /* Aligning text to the left */
+    padding: 10px; /* Optional: Padding for better spacing */
+    background-color: #f5f5f5; /* Optional: Background color for result area */
+    border: 1px solid #ddd; /* Optional: Border around result area */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+strong {
+    font-weight: bold;
+}
